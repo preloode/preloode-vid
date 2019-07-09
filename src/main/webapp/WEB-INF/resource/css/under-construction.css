@@ -1,0 +1,21 @@
+/*==================== Content ====================*/
+#wrapper .wrapper img.picture {
+    display: block;
+    margin: 0 auto;
+    width: 600px;
+}
+
+#wrapper .wrapper p.description {
+    height: 50px;
+    line-height: 50px;
+    margin: 0;
+    text-align: center;
+}
+
+#wrapper .wrapper p.countdown {
+    font-weight: 600;
+    height: 70px;
+    line-height: 70px;
+    margin: 0;
+    text-align: center;
+}

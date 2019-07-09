@@ -1,0 +1,22 @@
+<h2 ng-init="initializeLayout()">Login</h2>
+<form method="POST" action="">
+    <p class="title">Username</p>
+    <input class="data" name="preloode-username" type="text" placeholder="Username" ng-keyup="checkLoginUsername()"
+           ng-model="loginUsername.value"/>
+    <p class="response" ng-class="loginUsername.response.class">{{loginUsername.response.value}}</p>
+    <p class="title">Password</p>
+    <input class="data" name="preloode-password" type="password" placeholder="Password" ng-keyup="checkLoginPassword()"
+           ng-model="loginPassword.value"/>
+    <p class="response" ng-class="loginPassword.response.class">{{loginPassword.response.value}}</p>
+    <div class="option">
+        <div class="checkbox">
+            <md-checkbox ng-checked="loginRememberMe.value" ng-click="rememberMeToggleCheckbox()">Remember me
+            </md-checkbox>
+        </div>
+        <div class="forget-password">
+            <a href="#"><p>Forget password</p></a>
+        </div>
+    </div>
+    <button class="login" name="login" type="submit" ng-click="login($event)">Login</button>
+    <p class="register">Don't have an account? <span ng-click="loadRegister()">Sign up here</span></p>
+</form>

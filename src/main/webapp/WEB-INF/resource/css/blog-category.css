@@ -1,0 +1,224 @@
+/*==================== Content ====================*/
+div.content .wrapper div.grid-view {
+    display: grid;
+    grid-auto-rows: auto;
+    grid-gap: 20px;
+    grid-template-columns: repeat(5, 244px);
+    margin: 0 0 30px 0;
+}
+
+div.wrapper .grid-view div.grid {
+    overflow: hidden;
+}
+
+div.grid a div.preview {
+    background: #c7c7c7;
+    box-shadow: 2px 2px 2px #c7c7c7;
+    height: 138px;
+    overflow: hidden;
+}
+
+div.grid a .preview img {
+    height: 100%;
+    object-fit: cover;
+    transition-duration: 0.2s;
+    width: 100%;
+}
+
+div.grid:hover > a .preview img {
+    transform: scale(1.2);
+}
+
+div.grid a .description h2 {
+    color: #000;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 0;
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+div.grid a .description p {
+    color: #000;
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@media only screen and (max-width: 359px) {
+
+    /*==================== Content ====================*/
+    div.content .wrapper div.grid-view {
+        grid-template-columns: 300px;
+    }
+
+    div.grid a div.preview {
+        height: 169px;
+    }
+
+}
+
+@media only screen and (min-width: 360px) and (max-width: 479px) {
+
+    /*==================== Content ====================*/
+    div.content .wrapper div.grid-view {
+        grid-template-columns: 320px;
+    }
+
+    div.grid a div.preview {
+        height: 180px;
+    }
+
+}
+
+@media only screen and (min-width: 480px) and (max-width: 599px) {
+
+    /*==================== Content ====================*/
+    div.content .wrapper div.grid-view {
+        grid-template-columns: repeat(2, 210px);
+    }
+
+    div.grid a div.preview {
+        height: 119px;
+    }
+
+}
+
+@media only screen and (min-width: 600px) and (max-width: 639px) {
+
+    /*==================== Content ====================*/
+    div.content .wrapper div.grid-view {
+        grid-template-columns: repeat(2, 270px);
+    }
+
+    div.grid a div.preview {
+        height: 152px;
+    }
+
+}
+
+@media only screen and (min-width: 640px) and (max-width: 767px) {
+
+    /*==================== Content ====================*/
+    div.content .wrapper div.grid-view {
+        grid-template-columns: repeat(2, 290px);
+    }
+
+    div.grid a div.preview {
+        height: 164px;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 799px) {
+
+    /*==================== Content ====================*/
+    div.content .wrapper div.grid-view {
+        grid-template-columns: repeat(3, 229.33px);
+    }
+
+    div.grid a div.preview {
+        height: 130px;
+    }
+
+}
+
+@media only screen and (min-width: 800px) and (max-width: 899px) {
+
+    /*==================== Content ====================*/
+    div.content .wrapper div.grid-view {
+        grid-template-columns: repeat(3, 240px);
+    }
+
+    div.grid a div.preview {
+        height: 135px;
+    }
+
+}
+
+@media only screen and (min-width: 900px) and (max-width: 979px) {
+
+    /*==================== Content ====================*/
+    div.content .wrapper div.grid-view {
+        grid-template-columns: repeat(3, 273.33px);
+    }
+
+    div.grid a div.preview {
+        height: 155px;
+    }
+
+}
+
+@media only screen and (min-width: 980px) and (max-width: 1023px) {
+
+    /*==================== Content ====================*/
+    div.content .wrapper div.grid-view {
+        grid-template-columns: repeat(3, 300px);
+    }
+
+    div.grid a div.preview {
+        height: 169px;
+    }
+
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+
+    /*==================== Content ====================*/
+    div.content .wrapper div.grid-view {
+        grid-template-columns: repeat(3, 314.66px);
+    }
+
+    div.grid a div.preview {
+        height: 178px;
+    }
+
+}
+
+@media only screen and (min-width: 1280px) and (max-width: 1359px) {
+
+    /*==================== Content ====================*/
+    div.content .wrapper div.grid-view {
+        grid-template-columns: repeat(5, 232px);
+    }
+
+    div.grid a div.preview {
+        height: 131px;
+    }
+
+}
+
+@media only screen and (min-width: 1360px) and (max-width: 1599px) {
+
+    /* Not set yet */
+
+}
+
+@media only screen and (min-width: 1600px) and (max-width: 1919px) {
+
+    /*==================== Content ====================*/
+    div.content .wrapper div.grid-view {
+        grid-template-columns: repeat(5, 284px);
+    }
+
+    div.grid a div.preview {
+        height: 160px;
+    }
+
+}
+
+@media only screen and (min-width: 1920px) {
+
+    /*==================== Content ====================*/
+    div.content .wrapper div.grid-view {
+        grid-template-columns: repeat(5, 344px);
+    }
+
+    div.grid a div.preview {
+        height: 194px;
+    }
+
+}

@@ -1,0 +1,58 @@
+<h2 ng-init="initializeLayout()">Sign Up</h2>
+<form method="POST" action="">
+    <p class="title"><span class="required">* </span>Username</p>
+    <input class="data" name="register-username" type="text" placeholder="Username" ng-keyup="checkRegisterUsername()"
+           ng-model="registerUsername.value"/>
+    <p class="response" ng-class="registerUsername.response.class">{{registerUsername.response.value}}</p>
+    <p class="title"><span class="required">* </span>Password</p>
+    <input class="data" name="register-password" type="password" placeholder="Password"
+           ng-keyup="checkRegisterPassword()" ng-model="registerPassword.value"/>
+    <p class="response" ng-class="registerPassword.response.class">{{registerPassword.response.value}}</p>
+    <p class="title"><span class="required">* </span>Confirm Password</p>
+    <input class="data" name="register-confirm-password" type="password" placeholder="Confirm Password"
+           ng-keyup="checkRegisterConfirmPassword()" ng-model="registerConfirmPassword.value"/>
+    <p class="response" ng-class="registerConfirmPassword.response.class">{{registerConfirmPassword.response.value}}</p>
+    <p class="title"><span class="required">* </span>Gender</p>
+    <md-input-container>
+        <md-select ng-change="checkGender()" ng-model="registerGender.selected" placeholder="Gender">
+            <md-option ng-repeat="option in registerGender.option" ng-value="option">
+                {{option.name}}
+            </md-option>
+        </md-select>
+    </md-input-container>
+    <p class="response" ng-class="registerGender.response.class">{{registerGender.response.value}}</p>
+    <p class="title"><span class="required">* </span>Email Address</p>
+    <input class="data" name="register-email" type="text" placeholder="Email" ng-keyup="checkRegisterEmailAddress()"
+           ng-model="registerEmail.value"/>
+    <p class="response" ng-class="registerEmailAddress.response.class">{{registerEmailAddress.response.value}}</p>
+    <p class="title"><span class="required">* </span>Phone Number</p>
+    <div class="phone">
+        <div class="country-code">
+            <md-input-container>
+                <md-select ng-model="registerPhoneNumber.countryCode.selected" placeholder="Country Code">
+                    <md-option ng-repeat="option in registerPhoneNumber.countryCode.option" ng-value="option">
+                        {{option.number}}
+                    </md-option>
+                </md-select>
+            </md-input-container>
+        </div>
+        <div class="number">
+            <input class="data" name="register-phone" type="text" placeholder="Phone Number"
+                   ng-keyup="checkRegisterPhoneNumber()" ng-model="registerPhoneNumber.value"/>
+        </div>
+    </div>
+    <p class="response" ng-class="registerPhoneNumber.response.class">{{registerPhoneNumber.response.value}}</p>
+    <p class="title"><span class="required">* </span>I'm not robot</p>
+    <div class="captcha">
+        <div class="captcha-input">
+            <input class="data" name="register-captcha" type="text" placeholder="Captcha"
+                   ng-keyup="checkRegisterCaptcha()" ng-model="registerCaptcha.value"/>
+        </div>
+        <div class="captcha-image">
+            <img class="register-dynamic-captcha" src="/captcha" alt="Captcha Image"/>
+        </div>
+        <p class="refresh-captcha"><i class="refresh-black square-20" ng-click="refreshRegisterCaptcha()"></i></p>
+    </div>
+    <p class="response" ng-class="registerCaptcha.response.class">{{registerCaptcha.response.value}}</p>
+    <button class="register" name="register" type="submit" ng-click="register($event)">Sign Up</button>
+</form>

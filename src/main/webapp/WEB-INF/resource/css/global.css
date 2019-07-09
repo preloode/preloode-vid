@@ -1,0 +1,1179 @@
+/*==================== Basic ====================*/
+html,
+body {
+    background: #fff;
+    color: #000;
+    font-family: open-sans, Arial, sans-serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+a {
+    color: #1560c6;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgba(221, 0, 63, 0.7);
+}
+
+#wrapper {
+    height: 100%;
+    width: 100%;
+}
+
+/*========== Page Not Found ==========*/
+#wrapper .wrapper img.page-not-found {
+    display: block;
+    margin: 0 auto;
+    width: 900px;
+}
+
+#wrapper .wrapper p.back {
+    height: 50px;
+    line-height: 50px;
+    margin: 0;
+    text-align: center;
+}
+
+/*========== Popup ==========*/
+#popup div.wrapper {
+    width: 413px !important;
+}
+
+div.wrapper .popup h2 {
+    line-height: 30px;
+    margin: 0 0 10px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+div.popup form p.title {
+    font-weight: 600;
+    line-height: 20px;
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+    width: 100% !important;
+}
+
+div.popup form .title span.required {
+    background: none;
+    color: #af2f2f;
+    display: inline;
+    margin: 0;
+}
+
+div.popup form input.data {
+    border: 1px solid #c7c7c7;
+    font-weight: 600;
+    height: 30px;
+    margin: 0 0 5px 0;
+    padding: 5px 10px;
+    width: 378px;
+}
+
+div.popup form md-input-container {
+    height: 30px;
+}
+
+div.popup form div.phone {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 80px 310px;
+}
+
+div.phone .number input.data {
+    width: 288px;
+}
+
+div.phone .country-code div.ui-select-container {
+    width: 80px;
+}
+
+div.popup form div.captcha {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 240px 120px 20px;
+}
+
+div.captcha .captcha-input input.data {
+    width: 218px;
+}
+
+div.popup form .captcha div.captcha-image {
+    height: 42px;
+    text-align: right;
+}
+
+div.popup form .captcha p.refresh-captcha {
+    line-height: 42px;
+    margin: 0;
+}
+
+div.popup form p.response {
+    color: #59ad2f;
+    height: 20px;
+    font-size: 12px;
+    line-height: 20px;
+    margin: 0 0 5px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+div.popup form p.response.error {
+    color: #af2f2f;
+}
+
+div.popup form div.option {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 190px 190px;
+    grid-template-rows: 32px;
+    margin: 0 0 20px 0;
+}
+
+div.forget-password a p {
+    line-height: 32px;
+    margin: 0;
+    overflow: hidden;
+    text-align: right;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+div.popup form button.login,
+div.popup form button.register {
+    background: rgba(21, 96, 198, 1);
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    height: 40px;
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+div.popup form button.login:hover,
+div.popup form button.register:hover {
+    background: rgba(21, 96, 198, 0.7);
+}
+
+div.popup form p.register {
+    line-height: 20px;
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+
+div.popup form .register span {
+    color: #1560c6;
+    cursor: pointer;
+}
+
+/*========== Tiny MCE ==========*/
+.mce-panel {
+    border: none !important;
+    border-bottom: 1px solid #c7c7c7 !important;
+    box-shadow: none !important;
+}
+
+.mce-panel iframe {
+    height: 50px !important;
+}
+
+/*==================== Content ====================*/
+#wrapper .wrapper {
+    margin: 0 auto;
+    width: 1300px;
+}
+
+#content .wrapper div.separator {
+    background: #ddd;
+    height: 1px;
+    margin: 0 0 20px 0;
+}
+
+#content .wrapper div.banner {
+    height: 90px;
+    margin: 20px auto 30px auto;
+    width: 728px;
+}
+
+/*========== Footer ==========*/
+#footer {
+    height: 50px;
+}
+
+#footer p {
+    line-height: 20px;
+    margin: 0 20px;
+    padding: 15px;
+    text-align: right;
+}
+
+/*========== Header ==========*/
+#header {
+    box-shadow: 2px 2px 2px #ddd;
+    margin: 0 0 30px 0;
+}
+
+#header div.wrapper {
+    display: grid;
+    grid-column: 1/3;
+    grid-gap: 20px;
+    grid-template-columns: 40px 250px 600px 1fr;
+    grid-template-rows: 40px;
+    padding: 15px 0;
+}
+
+#header .wrapper div.menu-icon {
+    line-height: 40px;
+    text-align: center;
+}
+
+div.logo a h1 {
+    height: 40px;
+    line-height: 40px;
+    margin: 0;
+}
+
+#header .wrapper div.search {
+    border: 1px solid #e7e7e7;
+    border-radius: 50px;
+    height: 38px;
+    overflow: hidden;
+}
+
+div.wrapper .search form {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 555px 20px;
+}
+
+div.wrapper .search form input {
+    background: none;
+    border: none;
+    display: block;
+    height: 30px;
+    padding: 5px 0 5px 20px;
+    width: 535px;
+}
+
+div.wrapper .search form button {
+    background: none;
+    border: none;
+    display: block;
+    height: 20px;
+    margin: 9px 15px 9px 0;
+    padding: 0;
+    width: 20px;
+}
+
+#header .wrapper div.account {
+    height: 40px;
+}
+
+div.wrapper .account p {
+    float: right;
+    line-height: 40px;
+    margin: 0 0 0 10px;
+    overflow: hidden;
+    text-align: right;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100px;
+}
+
+div.wrapper .account p.name {
+    margin: 0 10px 0 0;
+}
+
+div.account p i {
+    border-radius: 5px;
+}
+
+div.wrapper .account p.log {
+    background: rgba(21, 96, 198, 1);
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    float: right;
+    text-align: center;
+    transition-duration: 0.5s;
+}
+
+div.wrapper .account p.log:hover {
+    background: rgba(21, 96, 198, 0.7);
+}
+
+/*========== Menu ==========*/
+#menu {
+    background: #f5f5f5;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    transform: translateX(-100%);
+    transition: 0.2s linear all;
+    width: 400px;
+    z-index: 9;
+}
+
+#menu div.close {
+    cursor: pointer;
+    height: 20px;
+    line-height: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+#menu .main-menu ul.main-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0 50px;
+}
+
+div.main-menu .main-menu li {
+    height: 40px;
+    line-height: 40px;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+div.main-menu .main-menu li.child-menu {
+    height: 0;
+    line-height: 30px;
+    opacity: 0;
+    overflow: hidden;
+    transition: 0.2s linear all;
+}
+
+li.menu a div.icon {
+    float: left;
+    height: 1px;
+    margin: 20px 10px 14px 0;
+    width: 50px;
+}
+
+a .icon span {
+    background: #c7c7c7;
+    display: block;
+    height: 100%;
+    transition-duration: 0.2s;
+    width: 25px;
+}
+
+li.menu:hover > a .icon span {
+    width: 100%;
+}
+
+li.menu a p {
+    color: #000;
+    float: left;
+    font-size: 16px;
+    height: 40px;
+    margin: 0;
+    width: 215px;
+}
+
+li.child-menu a p {
+    line-height: 30px;
+    height: 30px;
+    margin: 0 0 0 60px;
+    width: 215px;
+}
+
+ul.main-menu .menu p.menu-toggle {
+    float: left;
+    height: 15px;
+    line-height: 15px;
+    margin: 12.5px 10px 12.5px 0;
+    width: 15px;
+}
+
+li.menu .menu-toggle i {
+    transition: 0.2s linear all;
+}
+
+div.main-menu .main-menu li.separator {
+    height: 3px;
+}
+
+div.main-menu .main-menu li.separator.child-menu {
+    height: 0;
+}
+
+@media only screen and (max-width: 359px) {
+
+    /*==================== Basic ====================*/
+    /*========== Popup ==========*/
+    #popup div.wrapper {
+        width: 273px !important;
+    }
+
+    div.popup form input.data {
+        width: 238px;
+    }
+
+    div.popup form div.ui-select-container {
+        width: 260px;
+    }
+
+    div.popup form div.phone {
+        grid-template-columns: 80px 170px;
+    }
+
+    div.phone .number input.data {
+        width: 148px;
+    }
+
+    div.popup form div.captcha {
+        grid-template-columns: 175px 75px;
+    }
+
+    div.popup form div.captcha-input {
+        grid-column: 1/3;
+    }
+
+    div.popup form .captcha-input input.data {
+        width: 238px;
+    }
+
+    div.popup form div.option {
+        grid-template-columns: 128px 112px;
+    }
+
+    /*========== Response ==========*/
+    #response {
+        left: 5%;
+        width: 90%;
+    }
+
+    /*==================== Content ====================*/
+    #wrapper div.wrapper {
+        width: 300px;
+    }
+
+    #content .wrapper div.banner {
+        height: 38px;
+        width: 300px;
+    }
+
+    /*========== Footer ==========*/
+    #footer p {
+        text-align: center;
+    }
+
+    /*========== Header ==========*/
+    #header div.wrapper {
+        grid-gap: 10px 20px;
+        grid-template-columns: 20px 140px 100px;
+        grid-template-rows: 30px 30px;
+    }
+
+    #header .wrapper div.menu-icon {
+        line-height: 30px;
+    }
+
+    div.logo a h1 {
+        height: 30px;
+        line-height: 30px;
+    }
+
+    #header .wrapper div.search {
+        grid-column: 1/4;
+        grid-row: 2/3;
+        height: 28px;
+    }
+
+    div.wrapper .search form {
+        grid-template-columns: 253px 20px;
+    }
+
+    div.wrapper .search form input {
+        height: 20px;
+        width: 233px;
+    }
+
+    div.wrapper .search form button {
+        margin: 4px 15px 4px 0;
+    }
+
+    #header .wrapper div.account {
+        grid-column: 3/4;
+        grid-row: 1/2;
+        height: 30px;
+    }
+
+    div.wrapper .account p {
+        line-height: 30px;
+    }
+
+    div.account p.log:nth-child(2) {
+        margin: 0;
+    }
+
+    div.account p.name,
+    div.account p.log:first-child {
+        display: none;
+    }
+
+    /*========== Menu ==========*/
+    #menu {
+        width: 300px;
+    }
+
+    #menu .main-menu ul.main-menu {
+        padding: 20px 20px 0 20px;
+    }
+
+    li.menu a div.icon {
+        width: 30px;
+    }
+
+    a .icon span {
+        width: 15px;
+    }
+
+    li.menu a p {
+        width: 185px;
+    }
+
+    li.child-menu a p {
+        margin: 0 0 0 40px;
+        width: 185px;
+    }
+
+}
+
+@media only screen and (min-width: 360px) and (max-width: 479px) {
+
+    /*==================== Basic ====================*/
+    /*========== Popup ==========*/
+    #popup div.wrapper {
+        width: 293px !important;
+    }
+
+    div.popup form input.data {
+        width: 258px;
+    }
+
+    div.popup form div.ui-select-container {
+        width: 280px;
+    }
+
+    div.popup form div.phone {
+        grid-template-columns: 80px 190px;
+    }
+
+    div.phone .number input.data {
+        width: 168px;
+    }
+
+    div.popup form div.captcha {
+        grid-template-columns: 185px 85px;
+    }
+
+    div.popup form div.captcha-input {
+        grid-column: 1/3;
+    }
+
+    div.captcha .captcha-input input.data {
+        width: 258px;
+    }
+
+    div.popup form div.option {
+        grid-template-columns: 128px 122px;
+    }
+
+    /*========== Response ==========*/
+    #response {
+        left: 5%;
+        width: 90%;
+    }
+
+    /*==================== Content ====================*/
+    #wrapper div.wrapper {
+        width: 320px;
+    }
+
+    #content .wrapper div.banner {
+        height: 40px;
+        width: 320px;
+    }
+
+    /*========== Footer ==========*/
+    #footer p {
+        text-align: center;
+    }
+
+    /*========== Header ==========*/
+    #header div.wrapper {
+        grid-gap: 10px 20px;
+        grid-template-columns: 20px 160px 100px;
+        grid-template-rows: 30px 30px;
+    }
+
+    #header .wrapper div.menu-icon {
+        line-height: 30px;
+    }
+
+    div.logo a h1 {
+        height: 30px;
+        line-height: 30px;
+    }
+
+    #header .wrapper div.search {
+        grid-column: 1/4;
+        grid-row: 2/3;
+        height: 28px;
+    }
+
+    div.wrapper .search form {
+        grid-template-columns: 273px 20px;
+    }
+
+    div.wrapper .search form input {
+        height: 20px;
+        width: 253px;
+    }
+
+    div.wrapper .search form button {
+        margin: 4px 15px 4px 0;
+    }
+
+    #header .wrapper div.account {
+        grid-column: 3/4;
+        grid-row: 1/2;
+        height: 30px;
+    }
+
+    div.wrapper .account p {
+        line-height: 30px;
+    }
+
+    div.account p.log:nth-child(2) {
+        margin: 0;
+    }
+
+    div.account p.name,
+    div.account p.log:first-child {
+        display: none;
+    }
+
+    /*========== Menu ==========*/
+    #menu {
+        width: 300px;
+    }
+
+    #menu .main-menu ul.main-menu {
+        padding: 20px 20px 0 20px;
+    }
+
+    li.menu a div.icon {
+        width: 30px;
+    }
+
+    a .icon span {
+        width: 15px;
+    }
+
+    li.menu a p {
+        width: 185px;
+    }
+
+    li.child-menu a p {
+        margin: 0 0 0 40px;
+        width: 185px;
+    }
+
+}
+
+@media only screen and (min-width: 480px) and (max-width: 599px) {
+
+    /*==================== Basic ====================*/
+    /*========== Response ==========*/
+    #response {
+        left: 10%;
+        width: 80%;
+    }
+
+    /*==================== Content ====================*/
+    #wrapper div.wrapper {
+        width: 440px;
+    }
+
+    #content .wrapper div.banner {
+        height: 55px;
+        width: 440px;
+    }
+
+    /*========== Footer ==========*/
+    #footer p {
+        text-align: center;
+    }
+
+    /*========== Header ==========*/
+    #header div.wrapper {
+        grid-gap: 10px 20px;
+        grid-template-columns: 20px 280px 100px;
+        grid-template-rows: 30px 30px;
+    }
+
+    #header .wrapper div.menu-icon {
+        line-height: 30px;
+    }
+
+    div.logo a h1 {
+        height: 30px;
+        line-height: 30px;
+    }
+
+    #header .wrapper div.search {
+        grid-column: 1/4;
+        grid-row: 2/3;
+        height: 28px;
+    }
+
+    div.wrapper .search form {
+        grid-template-columns: 393px 20px;
+    }
+
+    div.wrapper .search form input {
+        height: 20px;
+        width: 373px;
+    }
+
+    div.wrapper .search form button {
+        margin: 4px 15px 4px 0;
+    }
+
+    #header .wrapper div.account {
+        grid-column: 3/4;
+        grid-row: 1/2;
+        height: 30px;
+    }
+
+    div.wrapper .account p {
+        line-height: 30px;
+    }
+
+    div.account p.log:nth-child(2) {
+        margin: 0;
+    }
+
+    div.account p.name,
+    div.account p.log:first-child {
+        display: none;
+    }
+
+    /*========== Menu ==========*/
+    #menu {
+        width: 300px;
+    }
+
+    #menu .main-menu ul.main-menu {
+        padding: 20px 20px 0 20px;
+    }
+
+    li.menu a div.icon {
+        width: 30px;
+    }
+
+    a .icon span {
+        width: 15px;
+    }
+
+    li.menu a p {
+        width: 185px;
+    }
+
+    li.child-menu a p {
+        margin: 0 0 0 40px;
+        width: 185px;
+    }
+
+}
+
+@media only screen and (min-width: 600px) and (max-width: 639px) {
+
+    /*==================== Basic ====================*/
+    /*========== Response ==========*/
+    #response {
+        left: 20%;
+        width: 60%;
+    }
+
+    /*==================== Content ====================*/
+    #wrapper div.wrapper {
+        width: 560px;
+    }
+
+    #content .wrapper div.banner {
+        height: 70px;
+        width: 560px;
+    }
+
+    /*========== Footer ==========*/
+    #footer p {
+        text-align: center;
+    }
+
+    /*========== Header ==========*/
+    #header div.wrapper {
+        grid-gap: 10px 20px;
+        grid-template-columns: 20px 260px 240px;
+        grid-template-rows: 30px 30px;
+    }
+
+    #header .wrapper div.menu-icon {
+        line-height: 30px;
+    }
+
+    div.logo a h1 {
+        height: 30px;
+        line-height: 30px;
+    }
+
+    #header .wrapper div.search {
+        grid-column: 1/4;
+        grid-row: 2/3;
+        height: 28px;
+    }
+
+    div.wrapper .search form {
+        grid-template-columns: 513px 20px;
+    }
+
+    div.wrapper .search form input {
+        height: 20px;
+        width: 493px;
+    }
+
+    div.wrapper .search form button {
+        margin: 4px 15px 4px 0;
+    }
+
+    #header .wrapper div.account {
+        grid-column: 3/4;
+        grid-row: 1/2;
+        height: 30px;
+    }
+
+    div.wrapper .account p {
+        line-height: 30px;
+    }
+
+    div.account p.name {
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 640px) and (max-width: 767px) {
+
+    /*==================== Basic ====================*/
+    /*========== Response ==========*/
+    #response {
+        left: 20%;
+        width: 60%;
+    }
+
+    /*==================== Content ====================*/
+    #wrapper div.wrapper {
+        width: 600px;
+    }
+
+    #content .wrapper div.banner {
+        height: 75px;
+        width: 600px;
+    }
+
+    /*========== Footer ==========*/
+    #footer p {
+        text-align: center;
+    }
+
+    /*========== Header ==========*/
+    #header div.wrapper {
+        grid-gap: 10px 20px;
+        grid-template-columns: 20px 300px 240px;
+        grid-template-rows: 30px 30px;
+    }
+
+    #header .wrapper div.menu-icon {
+        line-height: 30px;
+    }
+
+    div.logo a h1 {
+        height: 30px;
+        line-height: 30px;
+    }
+
+    #header .wrapper div.search {
+        grid-column: 1/4;
+        grid-row: 2/3;
+        height: 28px;
+    }
+
+    div.wrapper .search form {
+        grid-template-columns: 553px 20px;
+    }
+
+    div.wrapper .search form input {
+        height: 20px;
+        width: 533px;
+    }
+
+    div.wrapper .search form button {
+        margin: 4px 15px 4px 0;
+    }
+
+    #header .wrapper div.account {
+        grid-column: 3/4;
+        grid-row: 1/2;
+        height: 30px;
+    }
+
+    div.wrapper .account p {
+        line-height: 30px;
+    }
+
+    div.account p.name {
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 799px) {
+
+    /*==================== Basic ====================*/
+    /*========== Response ==========*/
+    #response {
+        left: 25%;
+        width: 50%;
+    }
+
+    /*==================== Content ====================*/
+    #wrapper div.wrapper {
+        width: 728px;
+    }
+
+    /*========== Header ==========*/
+    #header div.wrapper {
+        grid-template-columns: 20px 260px 288px 100px;
+    }
+
+    div.wrapper .search form {
+        grid-template-columns: 243px 20px;
+    }
+
+    div.wrapper .search form input {
+        width: 223px;
+    }
+
+    div.account p.name,
+    div.account p.log:first-child {
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 800px) and (max-width: 899px) {
+
+    /*==================== Basic ====================*/
+    /*========== Response ==========*/
+    #response {
+        left: 30%;
+        width: 40%;
+    }
+
+    /*==================== Content ====================*/
+    #wrapper div.wrapper {
+        width: 760px;
+    }
+
+    /*========== Header ==========*/
+    #header div.wrapper {
+        grid-template-columns: 20px 260px 320px 100px;
+    }
+
+    div.wrapper .search form {
+        grid-template-columns: 275px 20px;
+    }
+
+    div.wrapper .search form input {
+        width: 255px;
+    }
+
+    div.account p.name,
+    div.account p.log:first-child {
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 900px) and (max-width: 979px) {
+
+    /*==================== Basic ====================*/
+    /*==================== Content ====================*/
+    #wrapper div.wrapper {
+        width: 860px;
+    }
+
+    /*========== Header ==========*/
+    #header div.wrapper {
+        grid-template-columns: 20px 280px 360px 1fr;
+    }
+
+    div.wrapper .search form {
+        grid-template-columns: 315px 20px;
+    }
+
+    div.wrapper .search form input {
+        width: 295px;
+    }
+
+    div.account p.name,
+    div.account p.log:first-child {
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 980px) and (max-width: 1023px) {
+
+    /*==================== Basic ====================*/
+    /*==================== Content ====================*/
+    #wrapper div.wrapper {
+        width: 940px;
+    }
+
+    /*========== Header ==========*/
+    #header div.wrapper {
+        grid-template-columns: 20px 280px 440px 1fr;
+    }
+
+    div.wrapper .search form {
+        grid-template-columns: 395px 20px;
+    }
+
+    div.wrapper .search form input {
+        width: 375px;
+    }
+
+    div.account p.name,
+    div.account p.log:first-child {
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+
+    /*==================== Basic ====================*/
+    /*==================== Content ====================*/
+    #wrapper div.wrapper {
+        width: 984px;
+    }
+
+    /*========== Header ==========*/
+    #header div.wrapper {
+        grid-template-columns: 20px 280px 284px 1fr;
+    }
+
+    div.wrapper .search form {
+        grid-template-columns: 239px 20px;
+    }
+
+    div.wrapper .search form input {
+        width: 219px;
+    }
+
+}
+
+@media only screen and (min-width: 1280px) and (max-width: 1359px) {
+
+    /*==================== Basic ====================*/
+    /*==================== Content ====================*/
+    #wrapper div.wrapper {
+        width: 1240px;
+    }
+
+    /*========== Header ==========*/
+    #header div.wrapper {
+        grid-template-columns: 30px 270px 540px 1fr;
+    }
+
+    div.wrapper .search form {
+        grid-template-columns: 495px 20px;
+    }
+
+    div.wrapper .search form input {
+        width: 455px;
+    }
+
+}
+
+@media only screen and (min-width: 1360px) and (max-width: 1599px) {
+
+    /* Not set yet */
+
+}
+
+@media only screen and (min-width: 1600px) and (max-width: 1919px) {
+
+    /*==================== Content ====================*/
+    #wrapper .wrapper {
+        margin: 0 auto;
+        width: 1500px;
+    }
+
+    /*========== Header ==========*/
+    #header div.wrapper {
+        grid-template-columns: 40px 250px 700px 1fr;
+    }
+
+    div.wrapper .search form {
+        grid-template-columns: 655px 20px;
+    }
+
+    div.wrapper .search form input {
+        width: 635px;
+    }
+
+}
+
+@media only screen and (min-width: 1920px) {
+
+    /*==================== Content ====================*/
+    #wrapper .wrapper {
+        margin: 0 auto;
+        width: 1800px;
+    }
+
+    /*========== Header ==========*/
+    #header div.wrapper {
+        grid-template-columns: 40px 250px 1000px 1fr;
+    }
+
+    div.wrapper .search form {
+        grid-template-columns: 955px 20px;
+    }
+
+    div.wrapper .search form input {
+        width: 935px;
+    }
+
+}
